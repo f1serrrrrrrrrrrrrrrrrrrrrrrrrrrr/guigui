@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sistema de Ponto</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>Sistema de Ponto</h1>
+
+        <p class="subtitulo">
+            Registro de entrada do funcionário
+        </p>
+
+        <div class="card">
+
+            <label for="nome">Nome do funcionário</label>
+
+            <input
+                type="text"
+                id="nome"
+                placeholder="Digite seu nome"
+                autocomplete="off"
+            >
+
+            <div class="relogio" id="relogio">
+                00:00:00
+            </div>
+
+            <button id="btnEntrada">
+                Registrar Entrada
+            </button>
+
+            <p id="mensagem"></p>
+
+        </div>
+
+    </main>
+
+    <!-- Biblioteca oficial do Supabase -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
